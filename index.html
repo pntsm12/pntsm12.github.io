@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="BcwokyN2W4FMCCIj4YbvGcFCJojtQgojttCnNHCTtL4">
+<title>คำนวณ — เครื่องมือคำนวณและแปลงหน่วยออนไลน์ฟรี</title>
+<meta name="description" content="เครื่องมือคำนวณออนไลน์ฟรี คำนวณภาษีเงินได้ BMI ดอกเบี้ยเงินกู้ VAT เงินเดือนสุทธิ ค่าไฟ TDEE BMR เงินออม คำนวณอายุ แปลงหน่วย ข้อมูลอัปเดตล่าสุด ใช้ได้ทันที ไม่ต้องลงทะเบียน">
+<meta name="robots" content="index, follow">
+<meta name="keywords" content="คำนวณออนไลน์, เครื่องมือคำนวณ, คำนวณภาษี, คำนวณ BMI, แปลงหน่วย, คำนวณค่าไฟ, คำนวณดอกเบี้ย, คำนวณเงินเดือน, TDEE, คำนวณอายุ">
+<link rel="canonical" href="https://pntsm12.github.io/">
+<link rel="sitemap" type="application/xml" href="/sitemap.xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="คำนวณ — เครื่องมือคำนวณและแปลงหน่วยออนไลน์ฟรี">
+<meta property="og:description" content="รวมเครื่องมือคำนวณออนไลน์ฟรี ภาษี BMI ดอกเบี้ย VAT เงินเดือน ค่าไฟ TDEE เงินออม อายุ แปลงหน่วย ใช้งานง่าย ไม่ต้องลงทะเบียน">
+<meta property="og:url" content="https://pntsm12.github.io/">
+<meta property="og:locale" content="th_TH">
+<meta property="og:site_name" content="คำนวณ">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+  {"@type":"WebSite","name":"คำนวณ","url":"https://pntsm12.github.io/","description":"รวมเครื่องมือคำนวณออนไลน์ฟรีภาษาไทย","inLanguage":"th",
+   "potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://pntsm12.github.io/?q={search_term_string}"},"query-input":"required name=search_term_string"}},
+  {"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"หน้าหลัก","item":"https://pntsm12.github.io/"}]},
+  {"@type":"ItemList","name":"เครื่องมือคำนวณ","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"คำนวณภาษีเงินได้","url":"https://pntsm12.github.io/kamnuanphasi/"},
+    {"@type":"ListItem","position":2,"name":"คำนวณเงินเดือนสุทธิ","url":"https://pntsm12.github.io/kamnuanngoenduean/"},
+    {"@type":"ListItem","position":3,"name":"คำนวณดอกเบี้ยเงินกู้","url":"https://pntsm12.github.io/kamnuandokbia/"},
+    {"@type":"ListItem","position":4,"name":"คำนวณ VAT","url":"https://pntsm12.github.io/kamnuanvat/"},
+    {"@type":"ListItem","position":5,"name":"คิดส่วนลด","url":"https://pntsm12.github.io/kamnuansuanlod/"},
+    {"@type":"ListItem","position":6,"name":"คิดเปอร์เซ็นต์","url":"https://pntsm12.github.io/kamnuanpercent/"},
+    {"@type":"ListItem","position":7,"name":"คำนวณ BMI","url":"https://pntsm12.github.io/kamnuanbmi/"},
+    {"@type":"ListItem","position":8,"name":"คำนวณวันคลอด","url":"https://pntsm12.github.io/kamnuanwanklod/"},
+    {"@type":"ListItem","position":9,"name":"คำนวณอายุ","url":"https://pntsm12.github.io/kamnuanaayu/"},
+    {"@type":"ListItem","position":10,"name":"คำนวณแคลอรี่ TDEE BMR","url":"https://pntsm12.github.io/kamnuankcal/"},
+    {"@type":"ListItem","position":11,"name":"คำนวณเงินออม","url":"https://pntsm12.github.io/kamnuanngoenoom/"},
+    {"@type":"ListItem","position":12,"name":"คำนวณค่าไฟ","url":"https://pntsm12.github.io/kamnuankhafai/"}
+  ]}
+]}
+</script>
+<link rel="icon" href="favicon.ico"><link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@700&family=Sarabun:wght@400;500;600&display=swap">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{--bg:#F8F8F7;--s0:#FFFFFF;--s1:#F2F1EE;--s2:#ECEAE6;--b0:rgba(0,0,0,0.07);--b1:rgba(0,0,0,0.13);--t0:#18181A;--t1:#4A4946;--t2:#7A7872;--ink:#18181A;--inv:#FFFFFF;--r:10px;--r-lg:14px;}
+[data-theme="dark"]{--bg:#111110;--s0:#1C1C1A;--s1:#242422;--s2:#2C2B28;--b0:rgba(255,255,255,0.07);--b1:rgba(255,255,255,0.13);--t0:#EDEAE2;--t1:#A8A49C;--t2:#68655E;--ink:#EDEAE2;--inv:#111110;}
+:focus-visible{outline:2px solid #2563EB;outline-offset:2px;border-radius:4px;}
+html{scroll-behavior:smooth;}
+body{font-family:'Sarabun',sans-serif;background:var(--bg);color:var(--t0);min-height:100vh;-webkit-font-smoothing:antialiased;transition:background .2s,color .2s;}
+
+/* Header */
+header{height:54px;display:flex;align-items:center;padding:0 24px;gap:12px;border-bottom:1px solid var(--b0);}
+.logo{display:flex;align-items:center;gap:9px;text-decoration:none;flex:1;}
+.logo svg{width:32px;height:32px;flex-shrink:0;}
+.logo-t{display:flex;flex-direction:column;line-height:1.1;}
+.logo-th{font-family:'Noto Serif Thai',serif;font-size:16px;font-weight:700;color:var(--t0);}
+.logo-en{font-size:9px;font-weight:600;color:var(--t2);letter-spacing:2px;}
+.dark-btn{width:34px;height:34px;border:1px solid var(--b0);border-radius:50%;background:transparent;cursor:pointer;display:flex;align-items:center;justify-content:center;color:var(--t1);transition:all .15s;flex-shrink:0;}
+.dark-btn:hover{border-color:var(--b1);background:var(--s1);}
+.dark-btn svg{width:14px;height:14px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;}
+
+/* Hero */
+.hero{text-align:center;padding:52px 24px 36px;}
+.hero h1{font-family:'Noto Serif Thai',serif;font-size:clamp(28px,5vw,42px);font-weight:700;color:var(--t0);letter-spacing:-.5px;line-height:1.15;}
+.hero p{margin-top:12px;font-size:15px;color:var(--t1);max-width:440px;margin-left:auto;margin-right:auto;line-height:1.8;}
+.badges{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:20px;}
+.badge{padding:5px 14px;border:1px solid var(--b1);border-radius:20px;font-size:13px;font-weight:500;color:var(--t1);background:var(--s0);}
+
+/* Search */
+.search-wrap{max-width:520px;margin:24px auto 0;padding:0 24px;position:relative;}
+.search-row{display:flex;align-items:center;border:1.5px solid var(--b1);border-radius:28px;overflow:visible;background:var(--s0);transition:border-color .15s;box-shadow:0 2px 8px rgba(0,0,0,.06);position:relative;z-index:10;}
+.search-row:focus-within{border-color:var(--ink);}
+.search-row svg{width:16px;height:16px;stroke:var(--t2);stroke-width:2;fill:none;stroke-linecap:round;margin-left:16px;flex-shrink:0;}
+.search-row input{flex:1;height:48px;border:none;background:transparent;padding:0 16px;font-family:'Sarabun',sans-serif;font-size:15px;color:var(--t0);outline:none;}
+.search-row input::placeholder{color:var(--t2);}
+.search-clear{width:28px;height:28px;margin-right:10px;border:none;background:var(--s2);border-radius:50%;cursor:pointer;display:none;align-items:center;justify-content:center;color:var(--t2);font-size:14px;flex-shrink:0;transition:background .15s;}
+.search-clear:hover{background:var(--b1);}
+.search-clear.show{display:flex;}
+
+/* Dropdown */
+.search-dropdown{position:absolute;top:calc(100% + 6px);left:0;right:0;background:var(--s0);border:1px solid var(--b1);border-radius:var(--r-lg);box-shadow:0 8px 24px rgba(0,0,0,.12);z-index:200;overflow:hidden;display:none;}
+.search-dropdown.show{display:block;}
+.dd-item{display:flex;align-items:center;gap:10px;padding:10px 14px;text-decoration:none;color:var(--t0);transition:background .12s;cursor:pointer;}
+.dd-item:hover,.dd-item.focused{background:var(--s1);}
+.dd-ico{width:30px;height:30px;border-radius:7px;background:var(--ink);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.dd-ico svg{width:14px;height:14px;stroke:var(--inv);stroke-width:1.75;fill:none;stroke-linecap:round;stroke-linejoin:round;}
+[data-theme="dark"] .dd-ico{background:var(--s2);}
+[data-theme="dark"] .dd-ico svg{stroke:var(--t0);}
+.dd-name{font-size:13px;font-weight:600;}
+.dd-desc{font-size:11px;color:var(--t2);margin-top:1px;}
+.dd-empty{padding:16px;text-align:center;font-size:13px;color:var(--t2);}
+
+/* Page */
+.page{max-width:960px;margin:0 auto;padding:40px 24px 80px;}
+
+/* Top bar */
+.top-bar{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;}
+.page-title{font-family:'Noto Serif Thai',serif;font-size:17px;font-weight:700;color:var(--t0);display:flex;align-items:center;gap:8px;}
+.page-title::before{content:'';display:block;width:4px;height:18px;background:var(--ink);border-radius:2px;}
+.tool-count{font-size:13px;color:var(--t2);}
+
+/* Filter tabs */
+.filter-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:18px;}
+.f-tab{padding:6px 14px;border:1px solid var(--b0);border-radius:20px;background:var(--s0);font-family:'Sarabun',sans-serif;font-size:13px;font-weight:500;color:var(--t1);cursor:pointer;transition:all .15s;white-space:nowrap;}
+.f-tab:hover{border-color:var(--b1);color:var(--t0);}
+.f-tab.active{background:var(--ink);border-color:var(--ink);color:var(--inv);}
+
+/* Grid */
+.tools-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+@media(max-width:700px){.tools-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:420px){.tools-grid{grid-template-columns:1fr;}}
+
+/* Card */
+.tool-card{display:flex;align-items:center;gap:12px;padding:13px 15px;background:var(--s0);border:1px solid var(--b0);border-radius:var(--r-lg);text-decoration:none;color:var(--t0);transition:border-color .14s,background .14s;}
+.tool-card:hover{border-color:var(--b1);background:var(--s1);}
+.tool-card.hidden{display:none;}
+.tc-ico{width:36px;height:36px;border-radius:9px;background:var(--ink);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.tc-ico svg{width:16px;height:16px;stroke:var(--inv);stroke-width:1.75;fill:none;stroke-linecap:round;stroke-linejoin:round;}
+[data-theme="dark"] .tc-ico{background:var(--s2);}
+[data-theme="dark"] .tc-ico svg{stroke:var(--t0);}
+.tc-body{flex:1;min-width:0;}
+.tc-name{font-size:13px;font-weight:600;color:var(--t0);line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.tc-desc{font-size:11px;color:var(--t2);line-height:1.4;margin-top:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+
+.no-results{text-align:center;padding:48px 20px;color:var(--t2);font-size:14px;display:none;}
+
+footer{border-top:1px solid var(--b0);padding:20px;text-align:center;font-size:12px;color:var(--t2);}
+footer a{color:var(--t2);text-decoration:none;}footer a:hover{color:var(--t1);}
+
+@media(max-width:480px){header,.page{padding-left:16px;padding-right:16px;}.search-wrap{padding:0 16px;}.hero{padding:36px 16px 28px;}}
+</style>
+</head>
+<body>
+<header role="banner">
+  <a class="logo" href="/" aria-label="คำนวณ หน้าหลัก">
+    <svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect width="32" height="32" rx="7" fill="var(--ink)"/><text x="4" y="23" font-family="Arial Black,sans-serif" font-size="21" font-weight="900" fill="var(--inv)">K</text><text x="14" y="26" font-family="Arial,sans-serif" font-size="7" font-weight="700" fill="var(--inv)">+x=</text></svg>
+    <div class="logo-t"><span class="logo-th">คำนวณ</span><span class="logo-en">KAMNUAN</span></div>
+  </a>
+  <button class="dark-btn" id="darkBtn" onclick="toggleDark()" aria-label="สลับโหมดสีเข้ม/สว่าง" type="button">
+    <svg id="iSun" style="display:none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+    <svg id="iMoon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+  </button>
+</header>
+
+<!-- Hero + Search -->
+<div class="hero">
+  <h1>เครื่องมือคำนวณออนไลน์</h1>
+  <p>เครื่องมือคำนวณและแปลงหน่วยออนไลน์ฟรี<br>ภาษี BMI ค่าไฟ ดอกเบี้ย เงินออม อายุ และอีกมากมาย<br>ใช้ได้ทันที ไม่ต้องลงทะเบียน</p>
+  <div class="badges">
+    <span class="badge">ฟรี 100%</span>
+    <span class="badge">ข้อมูลอัปเดตล่าสุด</span>
+    <span class="badge">ไม่ต้องติดตั้ง</span>
+    <span class="badge">ใช้ได้บนมือถือ</span>
+  </div>
+</div>
+
+<div class="search-wrap" id="searchWrap">
+  <div class="search-row">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    <input type="search" id="searchInput" placeholder="ค้นหาเครื่องมือ เช่น ภาษี BMI ค่าไฟ..." autocomplete="off" aria-label="ค้นหาเครื่องมือ" oninput="onSearch(this.value)" onkeydown="onSearchKey(event)">
+    <button class="search-clear" id="searchClear" onclick="clearSearch()" type="button" aria-label="ล้างการค้นหา">✕</button>
+  </div>
+  <div class="search-dropdown" id="searchDropdown" role="listbox"></div>
+</div>
+
+<main class="page" id="main-content">
+  <div class="top-bar">
+    <div class="page-title">เครื่องมือทั้งหมด</div>
+    <div class="tool-count" id="toolCount"></div>
+  </div>
+
+  <div class="filter-tabs" role="group" aria-label="กรองหมวดหมู่">
+    <button class="f-tab active" data-cat="all" onclick="setTab(this)" type="button">ทั้งหมด</button>
+    <button class="f-tab" data-cat="การเงินและภาษี" onclick="setTab(this)" type="button">การเงินและภาษี</button>
+    <button class="f-tab" data-cat="สุขภาพ" onclick="setTab(this)" type="button">สุขภาพ</button>
+    <button class="f-tab" data-cat="แปลงหน่วย" onclick="setTab(this)" type="button">แปลงหน่วย</button>
+    <button class="f-tab" data-cat="พื้นที่" onclick="setTab(this)" type="button">พื้นที่</button>
+    <button class="f-tab" data-cat="ชีวิตประจำวัน" onclick="setTab(this)" type="button">ชีวิตประจำวัน</button>
+  </div>
+
+  <div class="no-results" id="noResults">ไม่พบเครื่องมือที่ค้นหา</div>
+
+  <div class="tools-grid" id="toolsGrid">
+
+    <a class="tool-card" href="/kamnuanphasi/" data-cat="การเงินและภาษี" data-kw="ภาษี เงินได้ บุคคลธรรมดา ลดหย่อน">
+      <div class="tc-ico"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+      <div class="tc-body"><div class="tc-name">คำนวณภาษีเงินได้</div><div class="tc-desc">หักลดหย่อนบุคคลธรรมดา ปี 2569</div></div>
+    </a>
+
+    <a class="tool-card" href="/kamnuanngoenduean/" data-cat="การเงินและภาษี" data-kw="เงินเดือน สุทธิ ประกันสังคม หักภาษี">
+      <div class="tc-ico"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+      <div class="tc-body"><div class="tc-name">คำนวณเงินเดือนสุทธิ</div><div class="tc-desc">หลังหักประกันสังคมและภาษี</div></div>
+    </a>
+
+    <a class="tool-card" href="/kamnuandokbia/" data-cat="การเงินและภาษี" data-kw="ดอกเบี้ย เงินกู้ ผ่อน บ้าน รถ สินเชื่อ">
+      <div class="tc-ico"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+      <div class="tc-body"><div class="tc-name">คำนวณดอกเบี้ยเงินกู้</div><div class="tc-desc">สินเชื่อบ้าน รถ ส่วนบุคคล</div></div>
+    </a>
+
+    <a class="tool-card" href="/kamnuanvat/" data-cat="การเงินและภาษี" data-kw="VAT ภาษีมูลค่าเพิ่ม บวก ถอด service charge">
+      <div class="tc-ico"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+      <div class="tc-body"><div class="tc-name">คำนวณ VAT</div><div class="tc-desc">บวก/ถอด VAT 7% และค่าบริการ</div></div>
+    </a>
+
+    <a class="tool-card" href="/kamnuansuanlod/" data-cat="การเงินและภาษี" data-kw="ส่วนลด ราคา ลด ซื้อ ขาย">
+      <div class="tc-ico"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+      <div class="tc-body"><div class="tc-name">คิดส่วนลด</div><div class="tc-desc">ลดหลายชั้น หาราคาต้นทุน</div></div>
+    </a>
+
+    <a class="tool-card" href="/kamnuanpercent/" data-cat="การเงินและภาษี" data-kw="เปอร์เซ็นต์ ร้อยละ กำไร ขาดทุน">
+      <div class="tc-ico"><svg viewBox="0 0 24 24"><line x1="19" y1="5" x2="5" y2="19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg></div>
+      <div class="tc-body"><div class="tc-name">คิดเปอร์เซ็นต์</div><div class="tc-desc">เปลี่ยนแปลง กำไร/ขาดทุน</div></div>
+    </a>
+
+    <a class="tool-card" href="/kamnuanngoenoom/" data-cat="การเงินและภาษี" data-kw="เงินออม ดอกเบี้ยทบต้น เกษียณ วางแผน">
+      <div class="tc-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+      <div class="tc-body"><div class="tc-name">คำนวณเงินออม</div><div class="tc-desc">ดอกเบี้ยทบต้น วางแผนออม</div></div>
+    </a>
+
+    <a class="tool-card" href="/kamnuankhafai/" data-cat="ชีวิตประจำวัน" data-kw="ค่าไฟ หน่วย กฟน กฟภ Ft ไฟฟ้า">
+      <div class="tc-ico"><svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+      <div class="tc-body"><div class="tc-name">คำนวณค่าไฟ</div><div class="tc-desc">อัตรา กฟน./กฟภ. ปี 2569</div></div>
+    </a>
+
+    <a class="tool-card" href="/kamnuanbmi/" data-cat="สุขภาพ" data-kw="BMI ดัชนีมวลกาย น้ำหนัก ส่วนสูง อ้วน ผอม">
+      <div class="tc-ico"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+      <div class="tc-body"><div class="tc-name">คำนวณ BMI</div><div class="tc-desc">ดัชนีมวลกาย เกณฑ์คนเอเชีย</div></div>
+    </a>
+
+    <a class="tool-card" href="/kamnuanwanklod/" data-cat="สุขภาพ" data-kw="วันคลอด ตั้งครรภ์ อายุครรภ์ กำหนด">
+      <div class="tc-ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+      <div class="tc-body"><div class="tc-name">คำนวณวันคลอด</div><div class="tc-desc">อายุครรภ์และกำหนดคลอด</div></div>
+    </a>
+
+    <a class="tool-card" href="/kamnuankcal/" data-cat="สุขภาพ" data-kw="แคลอรี่ TDEE BMR ออกกำลังกาย ลดน้ำหนัก">
+      <div class="tc-ico"><svg viewBox="0 0 24 24"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg></div>
+      <div class="tc-body"><div class="tc-name">คำนวณแคลอรี่ TDEE BMR</div><div class="tc-desc">พลังงานที่ต้องการต่อวัน</div></div>
+    </a>
+
+    <a class="tool-card" href="/kamnuanaayu/" data-cat="ชีวิตประจำวัน" data-kw="อายุ วันเกิด ปี เดือน วัน พศ คศ">
+      <div class="tc-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+      <div class="tc-body"><div class="tc-name">คำนวณอายุ</div><div class="tc-desc">อายุ ปี เดือน วัน วันที่เกิด</div></div>
+    </a>
+
+    <a class="tool-card" href="/kamnuanteedin/" data-cat="แปลงหน่วย" data-kw="ที่ดิน ไร่ งาน ตารางวา ตารางเมตร">
+      <div class="tc-ico"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div>
+      <div class="tc-body"><div class="tc-name">แปลงหน่วยที่ดิน</div><div class="tc-desc">ไร่ งาน ตร.วา ตร.ม. เอเคอร์</div></div>
+    </a>
+
+    <a class="tool-card" href="/kamnuannamnak/" data-cat="แปลงหน่วย" data-kw="น้ำหนัก กิโลกรัม กรัม ปอนด์ ออนซ์">
+      <div class="tc-ico"><svg viewBox="0 0 24 24"><path d="M12 2a3 3 0 0 1 3 3c0 1.5-1 2.7-2.4 3H15l2 12H7L9 8h2.4C10 7.7 9 6.5 9 5a3 3 0 0 1 3-3z"/></svg></div>
+      <div class="tc-body"><div class="tc-name">แปลงหน่วยน้ำหนัก</div><div class="tc-desc">กก. กรัม ปอนด์ ออนซ์</div></div>
+    </a>
+
+    <a class="tool-card" href="/kamnuankhwamyao/" data-cat="แปลงหน่วย" data-kw="ความยาว เมตร เซนติเมตร ฟุต นิ้ว ไมล์">
+      <div class="tc-ico"><svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+      <div class="tc-body"><div class="tc-name">แปลงหน่วยความยาว</div><div class="tc-desc">เมตร ฟุต นิ้ว กม. ไมล์</div></div>
+    </a>
+
+    <a class="tool-card" href="/kamnuanunhaphum/" data-cat="แปลงหน่วย" data-kw="อุณหภูมิ เซลเซียส ฟาเรนไฮต์ เคลวิน">
+      <div class="tc-ico"><svg viewBox="0 0 24 24"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/></svg></div>
+      <div class="tc-body"><div class="tc-name">แปลงหน่วยอุณหภูมิ</div><div class="tc-desc">เซลเซียส ฟาเรนไฮต์ เคลวิน</div></div>
+    </a>
+
+    <a class="tool-card" href="/kamnuanprimat/" data-cat="แปลงหน่วย" data-kw="ปริมาตร ลิตร มิลลิลิตร แกลลอน ถ้วย">
+      <div class="tc-ico"><svg viewBox="0 0 24 24"><path d="M5 3h14l1 9H4L5 3z"/><path d="M4 12h16v5a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3v-5z"/></svg></div>
+      <div class="tc-body"><div class="tc-name">แปลงหน่วยปริมาตร</div><div class="tc-desc">ลิตร มล. แกลลอน ถ้วย</div></div>
+    </a>
+
+    <a class="tool-card" href="/kamnuankhwamrew/" data-cat="แปลงหน่วย" data-kw="ความเร็ว กิโลเมตร ไมล์ นอต มัค">
+      <div class="tc-ico"><svg viewBox="0 0 24 24"><polyline points="13 17 18 12 13 7"/><polyline points="6 17 11 12 6 7"/></svg></div>
+      <div class="tc-body"><div class="tc-name">แปลงหน่วยความเร็ว</div><div class="tc-desc">กม./ชม. ไมล์/ชม. นอต มัค</div></div>
+    </a>
+
+    <a class="tool-card" href="/kamnuanphuenthi/" data-cat="พื้นที่" data-kw="พื้นที่ ห้อง ตารางเมตร ตารางวา ตารางฟุต">
+      <div class="tc-ico"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+      <div class="tc-body"><div class="tc-name">คำนวณพื้นที่ห้อง</div><div class="tc-desc">ตร.ม. ตร.วา ตร.ฟุต แนะนำขนาดแอร์</div></div>
+    </a>
+
+    <a class="tool-card" href="/kamnuanruptong/" data-cat="พื้นที่" data-kw="พื้นที่ รูปทรง วงกลม สามเหลี่ยม สี่เหลี่ยม">
+      <div class="tc-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><line x1="12" y1="3" x2="12" y2="21"/><path d="M3.6 9h16.8M3.6 15h16.8"/></svg></div>
+      <div class="tc-body"><div class="tc-name">คำนวณพื้นที่รูปทรง</div><div class="tc-desc">วงกลม สามเหลี่ยม คางหมู วงรี</div></div>
+    </a>
+
+    <a class="tool-card" href="/kamnuancalc/" data-cat="ชีวิตประจำวัน" data-kw="เครื่องคิดเลข บวก ลบ คูณ หาร keyboard">
+      <div class="tc-ico"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="2"/><line x1="8" y1="7" x2="8" y2="7"/><line x1="12" y1="7" x2="12" y2="7"/><line x1="16" y1="7" x2="16" y2="7"/><line x1="8" y1="12" x2="8" y2="12"/><line x1="12" y1="12" x2="12" y2="12"/><line x1="16" y1="12" x2="16" y2="12"/><line x1="8" y1="17" x2="8" y2="17"/><line x1="12" y1="17" x2="12" y2="17"/><line x1="16" y1="17" x2="16" y2="17"/></svg></div>
+      <div class="tc-body"><div class="tc-name">เครื่องคิดเลข</div><div class="tc-desc">รองรับ keyboard โหมดวิทยาศาสตร์</div></div>
+    </a>
+
+  </div>
+</main>
+
+<footer role="contentinfo"><p>© 2569 คำนวณ · <a href="/privacy.html">นโยบายความเป็นส่วนตัว</a></p></footer>
+
+<script>
+// Theme
+function initTheme(){const s=localStorage.getItem('theme'),p=matchMedia('(prefers-color-scheme:dark)').matches;applyT(s||(p?'dark':'light'));}
+function applyT(t){document.documentElement.setAttribute('data-theme',t);document.getElementById('iSun').style.display=t==='dark'?'block':'none';document.getElementById('iMoon').style.display=t==='light'?'block':'none';localStorage.setItem('theme',t);}
+function toggleDark(){applyT(document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark');}
+initTheme();
+
+// Build tool data from DOM
+const TOOLS = Array.from(document.querySelectorAll('.tool-card')).map(card=>({
+  el: card,
+  href: card.getAttribute('href'),
+  name: card.querySelector('.tc-name').textContent,
+  desc: card.querySelector('.tc-desc').textContent,
+  kw: card.dataset.kw||'',
+  cat: card.dataset.cat||'',
+  iconHTML: card.querySelector('.tc-ico').innerHTML,
+}));
+document.getElementById('toolCount').textContent = TOOLS.length+' เครื่องมือ';
+
+// Filter tabs
+let activeCat = 'all';
+function setTab(btn){
+  document.querySelectorAll('.f-tab').forEach(t=>t.classList.remove('active'));
+  btn.classList.add('active');
+  activeCat = btn.dataset.cat;
+  applyFilter();
+}
+function applyFilter(){
+  let found=0;
+  TOOLS.forEach(t=>{
+    const matchCat = activeCat==='all' || t.cat===activeCat;
+    t.el.classList.toggle('hidden', !matchCat);
+    if(matchCat) found++;
+  });
+  document.getElementById('noResults').style.display = found?'none':'block';
+  document.getElementById('toolCount').textContent = found+' เครื่องมือ';
+}
+
+// Search dropdown
+let ddIndex = -1;
+function onSearch(q){
+  const clear = document.getElementById('searchClear');
+  clear.classList.toggle('show', q.length>0);
+  const dd = document.getElementById('searchDropdown');
+  if(!q.trim()){dd.classList.remove('show');dd.innerHTML='';ddIndex=-1;return;}
+  const ql = q.toLowerCase();
+  const results = TOOLS.filter(t=>
+    t.name.toLowerCase().includes(ql)||
+    t.desc.toLowerCase().includes(ql)||
+    t.kw.toLowerCase().includes(ql)
+  ).slice(0,7);
+  if(!results.length){
+    dd.innerHTML='<div class="dd-empty">ไม่พบเครื่องมือที่ค้นหา</div>';
+    dd.classList.add('show');
+    ddIndex=-1;
+    return;
+  }
+  dd.innerHTML = results.map((t,i)=>`
+    <a class="dd-item" href="${t.href}" role="option" data-idx="${i}">
+      <div class="dd-ico">${t.iconHTML}</div>
+      <div><div class="dd-name">${t.name}</div><div class="dd-desc">${t.desc}</div></div>
+    </a>`).join('');
+  dd.classList.add('show');
+  ddIndex=-1;
+}
+
+function onSearchKey(e){
+  const dd = document.getElementById('searchDropdown');
+  const items = dd.querySelectorAll('.dd-item');
+  if(!items.length) return;
+  if(e.key==='ArrowDown'){e.preventDefault();ddIndex=Math.min(ddIndex+1,items.length-1);updateDDFocus(items);}
+  else if(e.key==='ArrowUp'){e.preventDefault();ddIndex=Math.max(ddIndex-1,-1);updateDDFocus(items);}
+  else if(e.key==='Enter'&&ddIndex>=0){e.preventDefault();items[ddIndex].click();}
+  else if(e.key==='Escape'){clearSearch();}
+}
+function updateDDFocus(items){
+  items.forEach((el,i)=>el.classList.toggle('focused',i===ddIndex));
+  if(ddIndex>=0) items[ddIndex].scrollIntoView({block:'nearest'});
+}
+function clearSearch(){
+  document.getElementById('searchInput').value='';
+  document.getElementById('searchDropdown').classList.remove('show');
+  document.getElementById('searchDropdown').innerHTML='';
+  document.getElementById('searchClear').classList.remove('show');
+  ddIndex=-1;
+}
+
+// Close dropdown on outside click
+document.addEventListener('click',e=>{
+  if(!document.getElementById('searchWrap').contains(e.target)) clearSearch();
+});
+</script>
+</body>
+</html>
