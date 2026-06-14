@@ -33,4 +33,13 @@
   <url><loc>https://kamnuan.net/kamnuanot/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kamnuan.net/kamnuanphon/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kamnuan.net/kamnuancurrency/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kamnuan.net/kamnuanpressure/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kamnuan.net/kamnuanleave/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kamnuan.net/kamnuanfat/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kamnuan.net/kamnuantravel/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kamnuan.net/kamnuanbreakeven/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kamnuan.net/kamnuanenergy/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kamnuan.net/kamnuannamprapa/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kamnuan.net/kamnuanbaht/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kamnuan.net/kamnuancredit/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
 </urlset>
