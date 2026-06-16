@@ -4,11 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>นโยบายความเป็นส่วนตัว — คำนวณ</title>
-<meta name="description" content="นโยบายความเป็นส่วนตัวของเว็บไซต์คำนวณ ข้อมูลที่เก็บรวบรวม การใช้คุกกี้ และสิทธิ์ของผู้ใช้">
+<meta name="description" content="นโยบายความเป็นส่วนตัวของเว็บไซต์คำนวณ ข้อมูลที่เก็บรวบรวม การใช้คุกกี้ Google AdSense และสิทธิ์ของผู้ใช้">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://pntsm12.github.io/privacy.html">
+<link rel="canonical" href="https://kamnuan.net/privacy.html">
 <link rel="icon" href="favicon.ico">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:title" content="นโยบายความเป็นส่วนตัว — คำนวณ">
+<meta property="og:description" content="นโยบายความเป็นส่วนตัวของเว็บไซต์คำนวณ การเก็บข้อมูล คุกกี้ และสิทธิ์ของผู้ใช้">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kamnuan.net/privacy.html">
+<meta property="og:locale" content="th_TH">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@700&family=Sarabun:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -37,39 +42,38 @@ header{position:sticky;top:0;z-index:100;height:52px;display:flex;align-items:ce
 .logo-t{display:flex;flex-direction:column;line-height:1.1;}
 .logo-th{font-family:'Noto Serif Thai',serif;font-size:15px;font-weight:700;color:var(--t0);}
 .logo-en{font-size:9px;font-weight:600;color:var(--t2);letter-spacing:2px;}
-.dark-btn{width:32px;height:32px;border:1px solid var(--b0);border-radius:6px;background:transparent;cursor:pointer;display:flex;align-items:center;justify-content:center;color:var(--t1);transition:all .15s;}
+.hdr-right{display:flex;align-items:center;gap:8px;}
+.back-btn{display:inline-flex;align-items:center;gap:4px;height:36px;padding:0 12px;border:1px solid var(--b0);border-radius:6px;background:transparent;font-family:'Sarabun',sans-serif;font-size:13px;font-weight:500;color:var(--t1);text-decoration:none;transition:all .15s;}
+.back-btn:hover{border-color:var(--b1);color:var(--t0);background:var(--s1);}
+.back-btn svg{width:14px;height:14px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;}
+.dark-btn{width:36px;height:36px;border:1px solid var(--b0);border-radius:6px;background:transparent;cursor:pointer;display:flex;align-items:center;justify-content:center;color:var(--t1);transition:all .15s;flex-shrink:0;}
 .dark-btn:hover{border-color:var(--b1);color:var(--t0);background:var(--s1);}
-.dark-btn svg{width:14px;height:14px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;}
+.dark-btn svg{width:16px;height:16px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;}
 
 .page{max-width:680px;margin:0 auto;padding:36px 20px 72px;}
 
-.page-hd{margin-bottom:32px;padding-bottom:24px;border-bottom:1px solid var(--b0);}
+.page-hd{margin-bottom:28px;padding-bottom:24px;border-bottom:1px solid var(--b0);}
 .page-hd h1{font-family:'Noto Serif Thai',serif;font-size:clamp(26px,5vw,34px);font-weight:700;color:var(--t0);line-height:1.1;letter-spacing:-.3px;}
 .page-hd p{margin-top:8px;font-size:13px;color:var(--t2);}
 
-/* Tab nav */
-.tab-row{display:flex;gap:6px;margin-bottom:28px;}
-.tab-btn{padding:7px 16px;border:1px solid var(--b0);border-radius:20px;background:transparent;font-family:'Sarabun',sans-serif;font-size:13px;font-weight:500;color:var(--t1);cursor:pointer;transition:all .15s;}
-.tab-btn:hover{border-color:var(--b1);color:var(--t0);}
-.tab-btn.on{background:var(--ink);border-color:var(--ink);color:var(--inv);}
+.pnav{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:28px;}
+.pnav a{padding:8px 16px;border:1px solid var(--b0);border-radius:20px;font-family:'Sarabun',sans-serif;font-size:13px;font-weight:500;color:var(--t1);text-decoration:none;transition:all .15s;}
+.pnav a:hover{border-color:var(--b1);color:var(--t0);}
+.pnav a.on{background:var(--ink);border-color:var(--ink);color:var(--inv);}
 
-.tab-content{display:none;}
-.tab-content.on{display:block;}
-
-/* Prose */
 .prose h2{font-family:'Noto Serif Thai',serif;font-size:18px;font-weight:700;color:var(--t0);margin:28px 0 10px;}
 .prose h2:first-child{margin-top:0;}
-.prose p{font-size:14px;color:var(--t1);line-height:1.8;margin-bottom:12px;}
+.prose p{font-size:15px;color:var(--t1);line-height:1.8;margin-bottom:12px;}
 .prose ul{padding-left:20px;margin-bottom:12px;}
-.prose li{font-size:14px;color:var(--t1);line-height:1.8;margin-bottom:4px;}
+.prose li{font-size:15px;color:var(--t1);line-height:1.8;margin-bottom:4px;}
 .prose strong{color:var(--t0);font-weight:600;}
 .prose a{color:var(--t1);text-decoration:underline;text-underline-offset:3px;}
 .prose a:hover{color:var(--t0);}
-.prose .note{background:var(--s1);border:1px solid var(--b0);border-radius:var(--r);padding:12px 16px;margin:16px 0;font-size:13px;color:var(--t1);}
+.prose .note{background:var(--s1);border:1px solid var(--b0);border-radius:var(--r);padding:12px 16px;margin:16px 0;font-size:14px;color:var(--t1);}
 
-footer{border-top:1px solid var(--b0);padding:20px;text-align:center;font-size:12px;color:var(--t2);}
+footer{border-top:1px solid var(--b0);padding:20px;text-align:center;font-size:12px;color:var(--t2);line-height:2;}
 footer a{color:var(--t2);text-decoration:none;}footer a:hover{color:var(--t1);}
-@media(max-width:480px){header,.page{padding-left:16px;padding-right:16px;}}
+@media(max-width:480px){header,.page{padding-left:16px;padding-right:16px;}.back-btn{padding:0 10px;}}
 </style>
 </head>
 <body>
@@ -86,87 +90,67 @@ footer a{color:var(--t2);text-decoration:none;}footer a:hover{color:var(--t1);}
       <span class="logo-en">KAMNUAN</span>
     </div>
   </a>
-  <button class="dark-btn" id="darkBtn" onclick="toggleDark()" aria-label="สลับโหมดสี" type="button">
-    <svg id="iSun" style="display:none" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
-    <svg id="iMoon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-  </button>
+  <div class="hdr-right">
+    <a class="back-btn" href="/" aria-label="กลับไปดูเครื่องมือทั้งหมด"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>เครื่องมือทั้งหมด</a>
+    <button class="dark-btn" id="darkBtn" onclick="toggleDark()" aria-label="สลับโหมดสี" type="button">
+      <svg id="iSun" style="display:none" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      <svg id="iMoon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+  </div>
 </header>
 
 <main id="main-content" class="page">
   <div class="page-hd">
-    <h1>นโยบายและเงื่อนไข</h1>
-    <p>อัปเดตล่าสุด: พฤษภาคม 2568</p>
+    <h1>นโยบายความเป็นส่วนตัว</h1>
+    <p>อัปเดตล่าสุด: มิถุนายน 2569</p>
   </div>
 
-  <div class="tab-row" role="tablist">
-    <button class="tab-btn on" role="tab" aria-selected="true" aria-controls="tab-privacy" onclick="switchTab('privacy',this)">นโยบายความเป็นส่วนตัว</button>
-    <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-terms" onclick="switchTab('terms',this)">เงื่อนไขการใช้งาน</button>
-  </div>
+  <nav class="pnav" aria-label="หน้าข้อมูล">
+    <a href="/about.html">เกี่ยวกับเรา</a>
+    <a href="/privacy.html" class="on">นโยบายความเป็นส่วนตัว</a>
+    <a href="/terms.html">เงื่อนไขการใช้งาน</a>
+    <a href="/contact.html">ติดต่อเรา</a>
+  </nav>
 
-  <!-- Privacy Policy -->
-  <div id="tab-privacy" class="tab-content on prose" role="tabpanel">
+  <div class="prose">
     <h2>ข้อมูลที่เราเก็บรวบรวม</h2>
-    <p>เว็บไซต์คำนวณ (kamnuan) <strong>ไม่เก็บข้อมูลส่วนตัวใดๆ ของผู้ใช้</strong> การคำนวณทั้งหมดเกิดขึ้นบนอุปกรณ์ของคุณ ข้อมูลที่กรอกในแบบฟอร์มไม่ถูกส่งไปยังเซิร์ฟเวอร์ใดๆ</p>
+    <p>เว็บไซต์คำนวณ (kamnuan.net) <strong>ไม่เก็บข้อมูลส่วนตัวใดๆ ของผู้ใช้</strong> การคำนวณทั้งหมดเกิดขึ้นบนอุปกรณ์ของคุณ ข้อมูลที่กรอกในแบบฟอร์มไม่ถูกส่งไปยังเซิร์ฟเวอร์ใดๆ</p>
     <p>ข้อมูลที่อาจถูกเก็บโดยอัตโนมัติผ่านบริการของบุคคลที่สาม ได้แก่</p>
     <ul>
       <li><strong>Google Analytics</strong> — ข้อมูลการใช้งานเว็บไซต์ เช่น จำนวนผู้เข้าชม หน้าที่ดู ระยะเวลาในการใช้งาน (ข้อมูลไม่ระบุตัวตน)</li>
       <li><strong>Google AdSense</strong> — ข้อมูลที่ใช้แสดงโฆษณาที่เกี่ยวข้อง รวมถึงคุกกี้ของ Google</li>
     </ul>
 
-    <h2>คุกกี้ (Cookies)</h2>
+    <h2>คุกกี้และการจัดเก็บข้อมูลบนอุปกรณ์</h2>
     <p>เว็บไซต์นี้ใช้ localStorage เพื่อจัดเก็บการตั้งค่าของผู้ใช้บนอุปกรณ์ของคุณเท่านั้น ได้แก่</p>
     <ul>
-      <li>การตั้งค่า Dark/Light mode</li>
-      <li>ประวัติการคำนวณ (เก็บเฉพาะบนอุปกรณ์ของคุณ)</li>
+      <li>การตั้งค่าโหมดสีเข้ม/สว่าง (Dark/Light mode)</li>
+      <li>ประวัติการคำนวณ (เก็บเฉพาะบนอุปกรณ์ของคุณ ไม่ส่งออกไปที่ใด)</li>
     </ul>
-    <p>Google AdSense อาจใช้คุกกี้เพื่อแสดงโฆษณาที่เกี่ยวข้องกับความสนใจของคุณ คุณสามารถปิดการใช้คุกกี้โฆษณาได้ที่ <a href="https://adssettings.google.com" target="_blank" rel="noopener">Google Ads Settings</a></p>
+    <p>บุคคลที่สาม รวมถึง Google ใช้คุกกี้เพื่อแสดงโฆษณาตามการเข้าชมเว็บไซต์นี้หรือเว็บไซต์อื่นๆ ของผู้ใช้ การใช้คุกกี้โฆษณาทำให้ Google และพาร์ตเนอร์สามารถแสดงโฆษณาที่เกี่ยวข้องกับผู้ใช้ได้ คุณสามารถปิดการใช้คุกกี้โฆษณาที่ปรับตามความสนใจได้ที่ <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener">การตั้งค่าโฆษณาของ Google</a></p>
 
     <h2>การใช้ข้อมูล</h2>
     <p>เราใช้ข้อมูลการใช้งาน (ที่ไม่ระบุตัวตน) เพื่อปรับปรุงเนื้อหาและประสบการณ์การใช้งานเว็บไซต์เท่านั้น เราไม่ขาย แลกเปลี่ยน หรือเปิดเผยข้อมูลส่วนบุคคลให้กับบุคคลที่สาม</p>
 
+    <h2>สิทธิ์ของผู้ใช้</h2>
+    <p>เนื่องจากเราไม่เก็บข้อมูลส่วนบุคคลของคุณบนเซิร์ฟเวอร์ คุณสามารถลบข้อมูลที่จัดเก็บบนอุปกรณ์ได้ทุกเมื่อ โดยการล้างข้อมูล localStorage ในเบราว์เซอร์ หรือล้างประวัติการคำนวณผ่านปุ่มในเครื่องมือ</p>
+
     <h2>บริการของบุคคลที่สาม</h2>
     <p>เว็บไซต์นี้ใช้บริการจากบุคคลที่สาม ซึ่งมีนโยบายความเป็นส่วนตัวของตนเอง</p>
     <ul>
-      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
-      <li><a href="https://support.google.com/adsense/answer/1348695" target="_blank" rel="noopener">Google AdSense Privacy</a></li>
+      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">นโยบายความเป็นส่วนตัวของ Google</a></li>
+      <li><a href="https://support.google.com/adsense/answer/1348695" target="_blank" rel="noopener">ข้อมูลความเป็นส่วนตัวของ Google AdSense</a></li>
     </ul>
 
     <h2>การเปลี่ยนแปลงนโยบาย</h2>
     <p>เราอาจปรับปรุงนโยบายนี้เป็นครั้งคราว การเปลี่ยนแปลงจะมีผลทันทีเมื่อประกาศบนหน้านี้ วันที่อัปเดตล่าสุดจะแสดงที่ด้านบน</p>
 
-    <div class="note">หากมีคำถามเกี่ยวกับนโยบายความเป็นส่วนตัว สามารถติดต่อได้ที่ GitHub Issues ของโปรเจกต์นี้</div>
-  </div>
-
-  <!-- Terms -->
-  <div id="tab-terms" class="tab-content prose" role="tabpanel">
-    <h2>การยอมรับเงื่อนไข</h2>
-    <p>การใช้งานเว็บไซต์คำนวณ (pntsm12.github.io) ถือว่าคุณยอมรับเงื่อนไขการใช้งานเหล่านี้ หากไม่ยอมรับ กรุณาหยุดใช้งานเว็บไซต์</p>
-
-    <h2>วัตถุประสงค์ของเว็บไซต์</h2>
-    <p>เว็บไซต์นี้ให้บริการเครื่องมือคำนวณออนไลน์ฟรี เพื่อความสะดวกในการคำนวณเบื้องต้นเท่านั้น ผลลัพธ์ที่ได้เป็นเพียงการประมาณการ ไม่ใช่คำแนะนำทางการเงิน กฎหมาย หรือการแพทย์</p>
-
-    <h2>ข้อจำกัดความรับผิด</h2>
-    <p>เราพยายามรักษาความถูกต้องของข้อมูลและสูตรคำนวณ อย่างไรก็ตาม</p>
-    <ul>
-      <li>ผลการคำนวณเป็นเพียงการประมาณการเบื้องต้น</li>
-      <li>ข้อมูลอัตราภาษี ค่า Ft และตัวเลขต่างๆ อาจเปลี่ยนแปลงได้</li>
-      <li>ควรตรวจสอบกับหน่วยงานที่เกี่ยวข้องก่อนตัดสินใจ</li>
-      <li>เราไม่รับผิดชอบต่อความเสียหายที่เกิดจากการใช้ข้อมูลบนเว็บไซต์นี้</li>
-    </ul>
-
-    <h2>ทรัพย์สินทางปัญญา</h2>
-    <p>เนื้อหา การออกแบบ และโค้ดของเว็บไซต์นี้เป็นทรัพย์สินของผู้พัฒนา ห้ามคัดลอกหรือนำไปใช้เชิงพาณิชย์โดยไม่ได้รับอนุญาต</p>
-
-    <h2>การเปลี่ยนแปลงบริการ</h2>
-    <p>เราสงวนสิทธิ์ในการเปลี่ยนแปลง ระงับ หรือยุติบริการได้ทุกเมื่อโดยไม่ต้องแจ้งล่วงหน้า</p>
-
-    <h2>กฎหมายที่ใช้บังคับ</h2>
-    <p>เงื่อนไขการใช้งานนี้อยู่ภายใต้กฎหมายของประเทศไทย</p>
+    <div class="note">หากมีคำถามเกี่ยวกับนโยบายความเป็นส่วนตัว สามารถติดต่อได้ที่ <a href="mailto:panithan.su12@gmail.com">panithan.su12@gmail.com</a> หรือดูที่หน้า <a href="/contact.html">ติดต่อเรา</a></div>
   </div>
 </main>
 
 <footer role="contentinfo">
-  <p>© 2568 คำนวณ · <a href="/">หน้าหลัก</a></p>
+  <p>© 2569 คำนวณ · <a href="/">หน้าหลัก</a> · <a href="/about.html">เกี่ยวกับเรา</a> · <a href="/privacy.html">นโยบายความเป็นส่วนตัว</a> · <a href="/terms.html">เงื่อนไข</a> · <a href="/contact.html">ติดต่อ</a></p>
 </footer>
 
 <script>
@@ -174,14 +158,6 @@ function initTheme(){const s=localStorage.getItem('theme'),p=matchMedia('(prefer
 function applyT(t){document.documentElement.setAttribute('data-theme',t);document.getElementById('iSun').style.display=t==='dark'?'block':'none';document.getElementById('iMoon').style.display=t==='light'?'block':'none';localStorage.setItem('theme',t);}
 function toggleDark(){applyT(document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark');}
 initTheme();
-
-function switchTab(id, btn){
-  document.querySelectorAll('.tab-content').forEach(el=>el.classList.remove('on'));
-  document.querySelectorAll('.tab-btn').forEach(b=>{b.classList.remove('on');b.setAttribute('aria-selected','false');});
-  document.getElementById('tab-'+id).classList.add('on');
-  btn.classList.add('on');
-  btn.setAttribute('aria-selected','true');
-}
 </script>
 </body>
 </html>
