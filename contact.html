@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ติดต่อเรา — คำนวณ</title>
+<meta name="description" content="ติดต่อทีมงานเว็บไซต์คำนวณ สอบถาม แจ้งปัญหา หรือเสนอแนะเครื่องมือใหม่ ผ่านอีเมล">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://kamnuan.net/contact.html">
+<link rel="icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:title" content="ติดต่อเรา — คำนวณ">
+<meta property="og:description" content="ติดต่อทีมงานเว็บไซต์คำนวณ สอบถาม แจ้งปัญหา หรือเสนอแนะเครื่องมือใหม่">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kamnuan.net/contact.html">
+<meta property="og:locale" content="th_TH">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@700&family=Sarabun:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --bg:#F8F8F7;--s0:#FFFFFF;--s1:#F2F1EE;
+  --b0:rgba(0,0,0,0.07);--b1:rgba(0,0,0,0.13);
+  --t0:#18181A;--t1:#6B6A65;--t2:#AAA89F;
+  --ink:#18181A;--inv:#FFFFFF;--r:8px;
+}
+[data-theme="dark"]{
+  --bg:#111110;--s0:#1C1C1A;--s1:#242422;
+  --b0:rgba(255,255,255,0.07);--b1:rgba(255,255,255,0.13);
+  --t0:#EDEAE2;--t1:#87847C;--t2:#47453F;
+  --ink:#EDEAE2;--inv:#111110;
+}
+:focus-visible{outline:2px solid #2563EB;outline-offset:2px;border-radius:4px;}
+:focus:not(:focus-visible){outline:none;}
+html{scroll-behavior:smooth;}
+body{font-family:'Sarabun',sans-serif;background:var(--bg);color:var(--t0);min-height:100vh;line-height:1.7;-webkit-font-smoothing:antialiased;transition:background .2s,color .2s;}
+
+header{position:sticky;top:0;z-index:100;height:52px;display:flex;align-items:center;padding:0 20px;gap:12px;border-bottom:1px solid var(--b0);background:rgba(248,248,247,0.92);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);}
+[data-theme="dark"] header{background:rgba(17,17,16,0.92);}
+.logo{display:flex;align-items:center;gap:9px;text-decoration:none;flex:1;}
+.logo svg{width:30px;height:30px;display:block;}
+.logo-t{display:flex;flex-direction:column;line-height:1.1;}
+.logo-th{font-family:'Noto Serif Thai',serif;font-size:15px;font-weight:700;color:var(--t0);}
+.logo-en{font-size:9px;font-weight:600;color:var(--t2);letter-spacing:2px;}
+.hdr-right{display:flex;align-items:center;gap:8px;}
+.back-btn{display:inline-flex;align-items:center;gap:4px;height:36px;padding:0 12px;border:1px solid var(--b0);border-radius:6px;background:transparent;font-family:'Sarabun',sans-serif;font-size:13px;font-weight:500;color:var(--t1);text-decoration:none;transition:all .15s;}
+.back-btn:hover{border-color:var(--b1);color:var(--t0);background:var(--s1);}
+.back-btn svg{width:14px;height:14px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;}
+.dark-btn{width:36px;height:36px;border:1px solid var(--b0);border-radius:6px;background:transparent;cursor:pointer;display:flex;align-items:center;justify-content:center;color:var(--t1);transition:all .15s;flex-shrink:0;}
+.dark-btn:hover{border-color:var(--b1);color:var(--t0);background:var(--s1);}
+.dark-btn svg{width:16px;height:16px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;}
+
+.page{max-width:680px;margin:0 auto;padding:36px 20px 72px;}
+
+.page-hd{margin-bottom:28px;padding-bottom:24px;border-bottom:1px solid var(--b0);}
+.page-hd h1{font-family:'Noto Serif Thai',serif;font-size:clamp(26px,5vw,34px);font-weight:700;color:var(--t0);line-height:1.1;letter-spacing:-.3px;}
+.page-hd p{margin-top:8px;font-size:13px;color:var(--t2);}
+
+.pnav{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:28px;}
+.pnav a{padding:8px 16px;border:1px solid var(--b0);border-radius:20px;font-family:'Sarabun',sans-serif;font-size:13px;font-weight:500;color:var(--t1);text-decoration:none;transition:all .15s;}
+.pnav a:hover{border-color:var(--b1);color:var(--t0);}
+.pnav a.on{background:var(--ink);border-color:var(--ink);color:var(--inv);}
+
+.prose h2{font-family:'Noto Serif Thai',serif;font-size:18px;font-weight:700;color:var(--t0);margin:28px 0 10px;}
+.prose h2:first-child{margin-top:0;}
+.prose p{font-size:15px;color:var(--t1);line-height:1.8;margin-bottom:12px;}
+.prose strong{color:var(--t0);font-weight:600;}
+.prose a{color:var(--t1);text-decoration:underline;text-underline-offset:3px;}
+.prose a:hover{color:var(--t0);}
+
+.contact-card{display:flex;align-items:center;gap:14px;background:var(--s1);border:1px solid var(--b0);border-radius:var(--r);padding:18px 20px;margin:20px 0;text-decoration:none;transition:all .15s;}
+.contact-card:hover{border-color:var(--b1);}
+.contact-ico{width:44px;height:44px;border-radius:10px;background:var(--ink);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.contact-ico svg{width:22px;height:22px;stroke:var(--inv);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;}
+.contact-info{display:flex;flex-direction:column;gap:2px;min-width:0;}
+.contact-label{font-size:12px;color:var(--t2);font-weight:500;}
+.contact-value{font-size:16px;color:var(--t0);font-weight:600;word-break:break-all;}
+footer{border-top:1px solid var(--b0);padding:20px;text-align:center;font-size:12px;color:var(--t2);line-height:2;}
+footer a{color:var(--t2);text-decoration:none;}footer a:hover{color:var(--t1);}
+@media(max-width:480px){header,.page{padding-left:16px;padding-right:16px;}.back-btn{padding:0 10px;}}</style>
+</head>
+<body>
+
+<header role="banner">
+  <a class="logo" href="/" aria-label="คำนวณ หน้าหลัก">
+    <svg viewBox="0 0 30 30" fill="none" aria-hidden="true">
+      <rect width="30" height="30" rx="6" fill="var(--ink)"/>
+      <text x="4" y="22" font-family="Arial Black,sans-serif" font-size="20" font-weight="900" fill="var(--inv)">K</text>
+      <text x="13" y="25" font-family="Arial,sans-serif" font-size="7" font-weight="700" fill="var(--inv)">+×=</text>
+    </svg>
+    <div class="logo-t">
+      <span class="logo-th">คำนวณ</span>
+      <span class="logo-en">KAMNUAN</span>
+    </div>
+  </a>
+  <div class="hdr-right">
+    <a class="back-btn" href="/" aria-label="กลับไปดูเครื่องมือทั้งหมด"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>เครื่องมือทั้งหมด</a>
+    <button class="dark-btn" id="darkBtn" onclick="toggleDark()" aria-label="สลับโหมดสี" type="button">
+      <svg id="iSun" style="display:none" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      <svg id="iMoon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main-content" class="page">
+  <div class="page-hd">
+    <h1>ติดต่อเรา</h1>
+    <p>มีคำถาม ข้อเสนอแนะ หรืออยากให้เพิ่มเครื่องมือใหม่</p>
+  </div>
+
+  <nav class="pnav" aria-label="หน้าข้อมูล">
+    <a href="/about.html">เกี่ยวกับเรา</a>
+    <a href="/privacy.html">นโยบายความเป็นส่วนตัว</a>
+    <a href="/terms.html">เงื่อนไขการใช้งาน</a>
+    <a href="/contact.html" class="on">ติดต่อเรา</a>
+  </nav>
+
+  <div class="prose">
+    <p>เรายินดีรับฟังทุกความคิดเห็น ไม่ว่าจะเป็นการแจ้งข้อผิดพลาด เสนอแนะเครื่องมือใหม่ที่อยากให้มี หรือสอบถามเรื่องการใช้งาน สามารถติดต่อเราได้ทางอีเมลด้านล่าง</p>
+
+    <a class="contact-card" href="mailto:panithan.su12@gmail.com">
+      <div class="contact-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 5L2 7"/></svg></div>
+      <div class="contact-info">
+        <span class="contact-label">อีเมล</span>
+        <span class="contact-value">panithan.su12@gmail.com</span>
+      </div>
+    </a>
+
+    <h2>เรื่องที่ติดต่อได้</h2>
+    <p>แจ้งข้อผิดพลาดของเครื่องมือหรือผลการคำนวณ เสนอเครื่องมือใหม่ที่อยากให้เพิ่ม สอบถามวิธีใช้งาน หรือเรื่องอื่นๆ เกี่ยวกับเว็บไซต์ เราจะพยายามตอบกลับโดยเร็วที่สุด</p>
+  </div>
+</main>
+
+<footer role="contentinfo">
+  <p>© 2569 คำนวณ · <a href="/">หน้าหลัก</a> · <a href="/about.html">เกี่ยวกับเรา</a> · <a href="/privacy.html">นโยบายความเป็นส่วนตัว</a> · <a href="/terms.html">เงื่อนไข</a> · <a href="/contact.html">ติดต่อ</a></p>
+</footer>
+
+<script>
+function initTheme(){const s=localStorage.getItem('theme'),p=matchMedia('(prefers-color-scheme:dark)').matches;applyT(s||(p?'dark':'light'));}
+function applyT(t){document.documentElement.setAttribute('data-theme',t);document.getElementById('iSun').style.display=t==='dark'?'block':'none';document.getElementById('iMoon').style.display=t==='light'?'block':'none';localStorage.setItem('theme',t);}
+function toggleDark(){applyT(document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark');}
+initTheme();
+</script>
+</body>
+</html>
