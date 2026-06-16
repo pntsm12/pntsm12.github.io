@@ -23,6 +23,9 @@
   <url><loc>https://kamnuan.net/kamnuanaayu/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kamnuan.net/kamnuancalc/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kamnuan.net/privacy.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://kamnuan.net/about.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://kamnuan.net/terms.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://kamnuan.net/contact.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://kamnuan.net/kamnuanss/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kamnuan.net/kamnuanwitholding/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kamnuan.net/kamnuanbmidek/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
