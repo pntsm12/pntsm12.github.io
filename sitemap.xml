@@ -1,58 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://kamnuan.net/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://kamnuan.net/kamnuanphasi/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kamnuan.net/kamnuanbmi/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kamnuan.net/kamnuandokbia/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kamnuan.net/kamnuanwanklod/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kamnuan.net/kamnuanteedin/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kamnuan.net/kamnuanpercent/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kamnuan.net/kamnuansuanlod/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kamnuan.net/kamnuanvat/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kamnuan.net/kamnuannamnak/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kamnuan.net/kamnuanngoenduean/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kamnuan.net/kamnuankhwamyao/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kamnuan.net/kamnuanunhaphum/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kamnuan.net/kamnuanprimat/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kamnuan.net/kamnuankhwamrew/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kamnuan.net/kamnuanphuenthi/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kamnuan.net/kamnuanruptong/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kamnuan.net/kamnuankhafai/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kamnuan.net/kamnuankcal/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kamnuan.net/kamnuanngoenoom/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kamnuan.net/kamnuanaayu/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kamnuan.net/privacy.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://kamnuan.net/about.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://kamnuan.net/terms.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://kamnuan.net/contact.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://kamnuan.net/kamnuanss/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kamnuan.net/kamnuanwitholding/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kamnuan.net/kamnuanbmidek/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kamnuan.net/kamnuanbase/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kamnuan.net/kamnuanhaanbill/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kamnuan.net/kamnuanretire/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kamnuan.net/kamnuangpa/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kamnuan.net/kamnuanot/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kamnuan.net/kamnuanphon/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kamnuan.net/kamnuancurrency/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kamnuan.net/kamnuanpressure/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kamnuan.net/kamnuanleave/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kamnuan.net/kamnuanfat/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kamnuan.net/kamnuantravel/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kamnuan.net/kamnuanbreakeven/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kamnuan.net/kamnuanenergy/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kamnuan.net/kamnuannamprapa/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kamnuan.net/kamnuanbaht/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kamnuan.net/kamnuancredit/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kamnuan.net/kamnuanpoon/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kamnuan.net/kamnuanwan/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kamnuan.net/kamnuanpace/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kamnuan.net/kamnuanthong/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kamnuan.net/kamnuanbtu/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kamnuan.net/kamnuantile/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kamnuan.net/kamnuansleep/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kamnuan.net/kamnuanwater/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kamnuan.net/kamnuanburn/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kamnuan.net/kamnuanheart/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://kamnuan.net/kamnuansut/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
 </urlset>
