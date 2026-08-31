@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>นโยบายความเป็นส่วนตัว — คำนวณ</title>
+<title>นโยบายความเป็นส่วนตัว | คำนวณ</title>
 <meta name="description" content="นโยบายความเป็นส่วนตัวของเว็บไซต์คำนวณ ข้อมูลที่เก็บรวบรวม การใช้คุกกี้ Google AdSense และสิทธิ์ของผู้ใช้">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://kamnuan.net/privacy.html">
 <link rel="icon" href="favicon.ico">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<meta property="og:title" content="นโยบายความเป็นส่วนตัว — คำนวณ">
+<meta property="og:title" content="นโยบายความเป็นส่วนตัว | คำนวณ">
 <meta property="og:description" content="นโยบายความเป็นส่วนตัวของเว็บไซต์คำนวณ การเก็บข้อมูล คุกกี้ และสิทธิ์ของผู้ใช้">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://kamnuan.net/privacy.html">
@@ -24,19 +24,12 @@
   --t0:#18181A;--t1:#6B6A65;--t2:#AAA89F;
   --ink:#18181A;--inv:#FFFFFF;--r:8px;
 }
-[data-theme="dark"]{
-  --bg:#111110;--s0:#1C1C1A;--s1:#242422;
-  --b0:rgba(255,255,255,0.07);--b1:rgba(255,255,255,0.13);
-  --t0:#EDEAE2;--t1:#87847C;--t2:#47453F;
-  --ink:#EDEAE2;--inv:#111110;
-}
 :focus-visible{outline:2px solid #2563EB;outline-offset:2px;border-radius:4px;}
 :focus:not(:focus-visible){outline:none;}
 html{scroll-behavior:smooth;}
 body{font-family:'Sarabun',sans-serif;background:var(--bg);color:var(--t0);min-height:100vh;line-height:1.7;-webkit-font-smoothing:antialiased;transition:background .2s,color .2s;}
 
 header{position:sticky;top:0;z-index:100;height:52px;display:flex;align-items:center;padding:0 20px;gap:12px;border-bottom:1px solid var(--b0);background:rgba(248,248,247,0.92);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);}
-[data-theme="dark"] header{background:rgba(17,17,16,0.92);}
 .logo{display:flex;align-items:center;gap:9px;text-decoration:none;flex:1;}
 .logo svg{width:30px;height:30px;display:block;}
 .logo-t{display:flex;flex-direction:column;line-height:1.1;}
@@ -46,9 +39,15 @@ header{position:sticky;top:0;z-index:100;height:52px;display:flex;align-items:ce
 .back-btn{display:inline-flex;align-items:center;gap:4px;height:36px;padding:0 12px;border:1px solid var(--b0);border-radius:6px;background:transparent;font-family:'Sarabun',sans-serif;font-size:13px;font-weight:500;color:var(--t1);text-decoration:none;transition:all .15s;}
 .back-btn:hover{border-color:var(--b1);color:var(--t0);background:var(--s1);}
 .back-btn svg{width:14px;height:14px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;}
-.dark-btn{width:36px;height:36px;border:1px solid var(--b0);border-radius:6px;background:transparent;cursor:pointer;display:flex;align-items:center;justify-content:center;color:var(--t1);transition:all .15s;flex-shrink:0;}
-.dark-btn:hover{border-color:var(--b1);color:var(--t0);background:var(--s1);}
-.dark-btn svg{width:16px;height:16px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;}
+.menu-wrap{position:relative;flex-shrink:0;}
+.menu-btn{width:36px;height:36px;flex-shrink:0;display:flex;align-items:center;justify-content:center;border:1px solid var(--b0);border-radius:8px;background:#FFFFFF;cursor:pointer;padding:0;transition:transform .1s ease;}
+.menu-btn:active{transform:scale(.94);}
+.menu-btn svg{width:16px;height:16px;stroke:#52504C;stroke-width:2;stroke-linecap:round;}
+.menu-panel{position:absolute;top:44px;right:0;min-width:190px;background:#FFFFFF;border:1px solid var(--b0);border-radius:var(--r);box-shadow:0 8px 24px rgba(0,0,0,0.14);padding:6px;opacity:0;transform:scale(.96) translateY(-4px);transform-origin:top right;pointer-events:none;transition:opacity .15s ease,transform .15s ease;z-index:200;}
+.menu-panel.open{opacity:1;transform:scale(1) translateY(0);pointer-events:auto;}
+.menu-panel a{display:block;padding:11px 12px;border-radius:8px;font-family:'Sarabun',sans-serif;font-size:13px;color:#18181A;text-decoration:none;}
+.menu-panel a:active{background:#EFEFEC;}
+@media(hover:hover){.menu-panel a:hover{background:#EFEFEC;}}
 
 .page{max-width:680px;margin:0 auto;padding:36px 20px 72px;}
 
@@ -70,6 +69,15 @@ header{position:sticky;top:0;z-index:100;height:52px;display:flex;align-items:ce
 .prose a{color:var(--t1);text-decoration:underline;text-underline-offset:3px;}
 .prose a:hover{color:var(--t0);}
 .prose .note{background:var(--s1);border:1px solid var(--b0);border-radius:var(--r);padding:12px 16px;margin:16px 0;font-size:14px;color:var(--t1);}
+.summary-box{background:var(--s1);border:1px solid var(--b0);border-radius:var(--r);padding:16px 18px;margin-bottom:20px;}
+.summary-box p{font-size:14px;color:var(--t0);line-height:1.7;margin-bottom:0;}
+.toc{border:1px solid var(--b0);border-radius:var(--r);padding:16px 18px;margin-bottom:28px;}
+.toc-title{font-size:12px;font-weight:600;color:var(--t2);text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px;}
+.toc ul{list-style:none;padding-left:0;margin-bottom:0;}
+.toc li{margin-bottom:6px;}
+.toc li:last-child{margin-bottom:0;}
+.toc a{font-size:14px;color:var(--t1);text-decoration:none;}
+.toc a:hover{color:var(--t0);text-decoration:underline;text-underline-offset:3px;}
 
 footer{border-top:1px solid var(--b0);padding:20px;text-align:center;font-size:12px;color:var(--t2);line-height:2;}
 footer a{color:var(--t2);text-decoration:none;}footer a:hover{color:var(--t1);}
@@ -92,10 +100,17 @@ footer a{color:var(--t2);text-decoration:none;}footer a:hover{color:var(--t1);}
   </a>
   <div class="hdr-right">
     <a class="back-btn" href="/" aria-label="กลับไปดูเครื่องมือทั้งหมด"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>เครื่องมือทั้งหมด</a>
-    <button class="dark-btn" id="darkBtn" onclick="toggleDark()" aria-label="สลับโหมดสี" type="button">
-      <svg id="iSun" style="display:none" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
-      <svg id="iMoon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-    </button>
+    <div class="menu-wrap">
+      <button class="menu-btn" id="menuBtn" aria-haspopup="true" aria-expanded="false" aria-label="เมนู" onclick="toggleMenu(event)" type="button">
+        <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <div class="menu-panel" id="menuPanel" role="menu">
+        <a href="/about.html" role="menuitem">เกี่ยวกับเรา</a>
+        <a href="/privacy.html" role="menuitem">นโยบายความเป็นส่วนตัว</a>
+        <a href="/terms.html" role="menuitem">เงื่อนไข</a>
+        <a href="/contact.html" role="menuitem">ติดต่อ</a>
+      </div>
+    </div>
   </div>
 </header>
 
@@ -113,15 +128,31 @@ footer a{color:var(--t2);text-decoration:none;}footer a:hover{color:var(--t1);}
   </nav>
 
   <div class="prose">
-    <h2>ข้อมูลที่เราเก็บรวบรวม</h2>
+    <div class="summary-box">
+      <p><strong>สรุปสั้นๆ:</strong> เราไม่เก็บข้อมูลส่วนตัวของคุณบนเซิร์ฟเวอร์ การคำนวณเกิดขึ้นบนอุปกรณ์ของคุณเอง มีแค่ Google Analytics และ Google AdSense ที่เก็บข้อมูลการใช้งานแบบไม่ระบุตัวตนเพื่อวัดผลและแสดงโฆษณาเท่านั้น</p>
+    </div>
+
+    <nav class="toc" aria-label="สารบัญ">
+      <p class="toc-title">หัวข้อในหน้านี้</p>
+      <ul>
+      <li><a href="#data-collect">ข้อมูลที่เราเก็บรวบรวม</a></li>
+      <li><a href="#cookies">คุกกี้และการจัดเก็บข้อมูลบนอุปกรณ์</a></li>
+      <li><a href="#data-use">การใช้ข้อมูล</a></li>
+      <li><a href="#user-rights">สิทธิ์ของผู้ใช้</a></li>
+      <li><a href="#third-party">บริการของบุคคลที่สาม</a></li>
+      <li><a href="#policy-changes">การเปลี่ยนแปลงนโยบาย</a></li>
+      </ul>
+    </nav>
+
+    <h2 id="data-collect">ข้อมูลที่เราเก็บรวบรวม</h2>
     <p>เว็บไซต์คำนวณ (kamnuan.net) <strong>ไม่เก็บข้อมูลส่วนตัวใดๆ ของผู้ใช้</strong> การคำนวณทั้งหมดเกิดขึ้นบนอุปกรณ์ของคุณ ข้อมูลที่กรอกในแบบฟอร์มไม่ถูกส่งไปยังเซิร์ฟเวอร์ใดๆ</p>
     <p>ข้อมูลที่อาจถูกเก็บโดยอัตโนมัติผ่านบริการของบุคคลที่สาม ได้แก่</p>
     <ul>
-      <li><strong>Google Analytics</strong> — ข้อมูลการใช้งานเว็บไซต์ เช่น จำนวนผู้เข้าชม หน้าที่ดู ระยะเวลาในการใช้งาน (ข้อมูลไม่ระบุตัวตน)</li>
-      <li><strong>Google AdSense</strong> — ข้อมูลที่ใช้แสดงโฆษณาที่เกี่ยวข้อง รวมถึงคุกกี้ของ Google</li>
+      <li><strong>Google Analytics</strong>: ข้อมูลการใช้งานเว็บไซต์ เช่น จำนวนผู้เข้าชม หน้าที่ดู ระยะเวลาในการใช้งาน (ข้อมูลไม่ระบุตัวตน)</li>
+      <li><strong>Google AdSense</strong>: ข้อมูลที่ใช้แสดงโฆษณาที่เกี่ยวข้อง รวมถึงคุกกี้ของ Google</li>
     </ul>
 
-    <h2>คุกกี้และการจัดเก็บข้อมูลบนอุปกรณ์</h2>
+    <h2 id="cookies">คุกกี้และการจัดเก็บข้อมูลบนอุปกรณ์</h2>
     <p>เว็บไซต์นี้ใช้ localStorage เพื่อจัดเก็บการตั้งค่าของผู้ใช้บนอุปกรณ์ของคุณเท่านั้น ได้แก่</p>
     <ul>
       <li>การตั้งค่าโหมดสีเข้ม/สว่าง (Dark/Light mode)</li>
@@ -129,20 +160,20 @@ footer a{color:var(--t2);text-decoration:none;}footer a:hover{color:var(--t1);}
     </ul>
     <p>บุคคลที่สาม รวมถึง Google ใช้คุกกี้เพื่อแสดงโฆษณาตามการเข้าชมเว็บไซต์นี้หรือเว็บไซต์อื่นๆ ของผู้ใช้ การใช้คุกกี้โฆษณาทำให้ Google และพาร์ตเนอร์สามารถแสดงโฆษณาที่เกี่ยวข้องกับผู้ใช้ได้ คุณสามารถปิดการใช้คุกกี้โฆษณาที่ปรับตามความสนใจได้ที่ <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener">การตั้งค่าโฆษณาของ Google</a></p>
 
-    <h2>การใช้ข้อมูล</h2>
+    <h2 id="data-use">การใช้ข้อมูล</h2>
     <p>เราใช้ข้อมูลการใช้งาน (ที่ไม่ระบุตัวตน) เพื่อปรับปรุงเนื้อหาและประสบการณ์การใช้งานเว็บไซต์เท่านั้น เราไม่ขาย แลกเปลี่ยน หรือเปิดเผยข้อมูลส่วนบุคคลให้กับบุคคลที่สาม</p>
 
-    <h2>สิทธิ์ของผู้ใช้</h2>
+    <h2 id="user-rights">สิทธิ์ของผู้ใช้</h2>
     <p>เนื่องจากเราไม่เก็บข้อมูลส่วนบุคคลของคุณบนเซิร์ฟเวอร์ คุณสามารถลบข้อมูลที่จัดเก็บบนอุปกรณ์ได้ทุกเมื่อ โดยการล้างข้อมูล localStorage ในเบราว์เซอร์ หรือล้างประวัติการคำนวณผ่านปุ่มในเครื่องมือ</p>
 
-    <h2>บริการของบุคคลที่สาม</h2>
+    <h2 id="third-party">บริการของบุคคลที่สาม</h2>
     <p>เว็บไซต์นี้ใช้บริการจากบุคคลที่สาม ซึ่งมีนโยบายความเป็นส่วนตัวของตนเอง</p>
     <ul>
       <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">นโยบายความเป็นส่วนตัวของ Google</a></li>
       <li><a href="https://support.google.com/adsense/answer/1348695" target="_blank" rel="noopener">ข้อมูลความเป็นส่วนตัวของ Google AdSense</a></li>
     </ul>
 
-    <h2>การเปลี่ยนแปลงนโยบาย</h2>
+    <h2 id="policy-changes">การเปลี่ยนแปลงนโยบาย</h2>
     <p>เราอาจปรับปรุงนโยบายนี้เป็นครั้งคราว การเปลี่ยนแปลงจะมีผลทันทีเมื่อประกาศบนหน้านี้ วันที่อัปเดตล่าสุดจะแสดงที่ด้านบน</p>
 
     <div class="note">หากมีคำถามเกี่ยวกับนโยบายความเป็นส่วนตัว สามารถติดต่อได้ที่ <a href="mailto:panithan.su12@gmail.com">panithan.su12@gmail.com</a> หรือดูที่หน้า <a href="/contact.html">ติดต่อเรา</a></div>
@@ -150,14 +181,34 @@ footer a{color:var(--t2);text-decoration:none;}footer a:hover{color:var(--t1);}
 </main>
 
 <footer role="contentinfo">
-  <p>© 2569 คำนวณ · <a href="/">หน้าหลัก</a> · <a href="/about.html">เกี่ยวกับเรา</a> · <a href="/privacy.html">นโยบายความเป็นส่วนตัว</a> · <a href="/terms.html">เงื่อนไข</a> · <a href="/contact.html">ติดต่อ</a></p>
+  <p>© 2569 คำนวณ</p>
 </footer>
 
 <script>
-function initTheme(){const s=localStorage.getItem('theme'),p=matchMedia('(prefers-color-scheme:dark)').matches;applyT(s||(p?'dark':'light'));}
-function applyT(t){document.documentElement.setAttribute('data-theme',t);document.getElementById('iSun').style.display=t==='dark'?'block':'none';document.getElementById('iMoon').style.display=t==='light'?'block':'none';localStorage.setItem('theme',t);}
-function toggleDark(){applyT(document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark');}
-initTheme();
+function toggleMenu(e){
+  e.stopPropagation();
+  const panel=document.getElementById('menuPanel');
+  const btn=document.getElementById('menuBtn');
+  const open=panel.classList.toggle('open');
+  btn.setAttribute('aria-expanded',String(open));
+}
+document.addEventListener('click',function(e){
+  const panel=document.getElementById('menuPanel');
+  const btn=document.getElementById('menuBtn');
+  if(panel.classList.contains('open') && !panel.contains(e.target) && e.target!==btn){
+    panel.classList.remove('open');
+    btn.setAttribute('aria-expanded','false');
+  }
+});
+document.addEventListener('keydown',function(e){
+  if(e.key==='Escape'){
+    const panel=document.getElementById('menuPanel');
+    if(panel.classList.contains('open')){
+      panel.classList.remove('open');
+      document.getElementById('menuBtn').setAttribute('aria-expanded','false');
+    }
+  }
+});
 </script>
 </body>
 </html>
