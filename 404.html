@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ไม่พบหน้านี้ | คำนวณ</title>
+<meta name="description" content="ไม่พบหน้าที่คุณค้นหา อาจถูกย้ายหรือลบไปแล้ว กลับไปดูเครื่องมือคำนวณทั้งหมดได้ที่หน้าหลัก">
+<meta name="robots" content="noindex, follow">
+<link rel="icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@700&family=Sarabun:wght@400;500;600&display=swap">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --bg:#F8F8F7;--s0:#FFFFFF;--s1:#F2F1EE;
+  --b0:rgba(0,0,0,0.07);--b1:rgba(0,0,0,0.13);
+  --t0:#18181A;--t1:#6B6A65;--t2:#AAA89F;
+  --ink:#18181A;--inv:#FFFFFF;--r:8px;
+}
+:focus-visible{outline:2px solid #2563EB;outline-offset:2px;border-radius:4px;}
+:focus:not(:focus-visible){outline:none;}
+html{scroll-behavior:smooth;}
+body{font-family:'Sarabun',sans-serif;background:var(--bg);color:var(--t0);min-height:100vh;line-height:1.7;-webkit-font-smoothing:antialiased;display:flex;flex-direction:column;}
+
+header{position:sticky;top:0;z-index:100;height:52px;display:flex;align-items:center;padding:0 20px;gap:12px;border-bottom:1px solid var(--b0);background:rgba(248,248,247,0.92);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);}
+.logo{display:flex;align-items:center;gap:9px;text-decoration:none;flex:1;}
+.logo svg{width:30px;height:30px;display:block;}
+.logo-t{display:flex;flex-direction:column;line-height:1.1;}
+.logo-th{font-family:'Noto Serif Thai',serif;font-size:15px;font-weight:700;color:var(--t0);}
+.logo-en{font-size:9px;font-weight:600;color:var(--t2);letter-spacing:2px;}
+.menu-wrap{position:relative;flex-shrink:0;}
+.menu-btn{width:36px;height:36px;flex-shrink:0;display:flex;align-items:center;justify-content:center;border:1px solid var(--b0);border-radius:8px;background:#FFFFFF;cursor:pointer;padding:0;transition:transform .1s ease;}
+.menu-btn:active{transform:scale(.94);}
+.menu-btn svg{width:16px;height:16px;stroke:#52504C;stroke-width:2;stroke-linecap:round;}
+.menu-panel{position:absolute;top:44px;right:0;min-width:190px;background:#FFFFFF;border:1px solid var(--b0);border-radius:var(--r);box-shadow:0 8px 24px rgba(0,0,0,0.14);padding:6px;opacity:0;transform:scale(.96) translateY(-4px);transform-origin:top right;pointer-events:none;transition:opacity .15s ease,transform .15s ease;z-index:200;}
+.menu-panel.open{opacity:1;transform:scale(1) translateY(0);pointer-events:auto;}
+.menu-panel a{display:block;padding:11px 12px;border-radius:8px;font-family:'Sarabun',sans-serif;font-size:13px;color:#18181A;text-decoration:none;}
+.menu-panel a:active{background:#EFEFEC;}
+@media(hover:hover){.menu-panel a:hover{background:#EFEFEC;}}
+
+main{flex:1;display:flex;align-items:center;justify-content:center;padding:40px 20px;}
+.err-wrap{max-width:420px;text-align:center;}
+.err-code{font-family:'Noto Serif Thai',serif;font-size:64px;font-weight:700;color:var(--t0);line-height:1;margin-bottom:8px;}
+.err-title{font-size:19px;font-weight:600;color:var(--t0);margin-bottom:10px;}
+.err-desc{font-size:14px;color:var(--t1);line-height:1.8;margin-bottom:28px;}
+.err-btn{display:inline-flex;align-items:center;gap:6px;height:46px;padding:0 24px;background:var(--ink);color:var(--inv);border-radius:var(--r);text-decoration:none;font-size:15px;font-weight:600;transition:transform .1s ease;}
+.err-btn:active{transform:scale(.97);}
+.err-btn svg{width:16px;height:16px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;}
+
+footer{border-top:1px solid var(--b0);padding:20px;text-align:center;font-size:12px;color:var(--t2);}
+footer a{color:var(--t2);text-decoration:none;}footer a:hover{color:var(--t1);}
+</style>
+</head>
+<body>
+
+<header role="banner">
+  <a class="logo" href="/" aria-label="คำนวณ หน้าหลัก">
+    <svg viewBox="0 0 30 30" fill="none" aria-hidden="true">
+      <rect width="30" height="30" rx="6" fill="var(--ink)"/>
+      <text x="4" y="22" font-family="Arial Black,sans-serif" font-size="20" font-weight="900" fill="var(--inv)">K</text>
+      <text x="13" y="25" font-family="Arial,sans-serif" font-size="7" font-weight="700" fill="var(--inv)">+×=</text>
+    </svg>
+    <div class="logo-t"><span class="logo-th">คำนวณ</span><span class="logo-en">KAMNUAN</span></div>
+  </a>
+  <div class="menu-wrap">
+    <button class="menu-btn" id="menuBtn" aria-haspopup="true" aria-expanded="false" aria-label="เมนู" onclick="toggleMenu(event)" type="button">
+      <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <div class="menu-panel" id="menuPanel" role="menu">
+      <a href="/about.html" role="menuitem">เกี่ยวกับเรา</a>
+      <a href="/privacy.html" role="menuitem">นโยบายความเป็นส่วนตัว</a>
+      <a href="/terms.html" role="menuitem">เงื่อนไข</a>
+      <a href="/contact.html" role="menuitem">ติดต่อ</a>
+    </div>
+  </div>
+</header>
+
+<main id="main-content">
+  <div class="err-wrap">
+    <div class="err-code">404</div>
+    <div class="err-title">ไม่พบหน้านี้</div>
+    <p class="err-desc">หน้าที่คุณค้นหาอาจถูกย้าย ลบไปแล้ว หรือพิมพ์ที่อยู่ผิด ลองกลับไปดูเครื่องมือคำนวณทั้งหมดที่หน้าหลักได้เลย</p>
+    <a class="err-btn" href="/"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>กลับหน้าหลัก</a>
+  </div>
+</main>
+
+<footer role="contentinfo">
+  <p>© 2569 คำนวณ</p>
+</footer>
+
+<script>
+function toggleMenu(e){
+  e.stopPropagation();
+  const panel=document.getElementById('menuPanel');
+  const btn=document.getElementById('menuBtn');
+  const open=panel.classList.toggle('open');
+  btn.setAttribute('aria-expanded',String(open));
+}
+document.addEventListener('click',function(e){
+  const panel=document.getElementById('menuPanel');
+  const btn=document.getElementById('menuBtn');
+  if(panel.classList.contains('open') && !panel.contains(e.target) && e.target!==btn){
+    panel.classList.remove('open');
+    btn.setAttribute('aria-expanded','false');
+  }
+});
+document.addEventListener('keydown',function(e){
+  if(e.key==='Escape'){
+    const panel=document.getElementById('menuPanel');
+    if(panel.classList.contains('open')){
+      panel.classList.remove('open');
+      document.getElementById('menuBtn').setAttribute('aria-expanded','false');
+    }
+  }
+});
+</script>
+</body>
+</html>
